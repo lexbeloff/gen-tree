@@ -1,0 +1,6 @@
+node_modules/
+dist/
+.generated/
+# приватная часть папок персон в фикстуре (на случай ручных проверок защиты)
+fixtures/data/people/*/private/
+.generated-*/

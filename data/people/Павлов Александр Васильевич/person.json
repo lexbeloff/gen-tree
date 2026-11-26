@@ -1,0 +1,48 @@
+{
+  "$schema": "../../person.schema.json",
+  "id": "P-0009",
+  "living": false,
+  "sex": "M",
+  "name": {
+    "surname": "Павлов",
+    "given": "Александр",
+    "patronymic": "Васильевич",
+    "birthSurname": null,
+    "otherSurnames": []
+  },
+  "status": "family-report",
+  "birth": {
+    "date": "1934-02-20",
+    "text": null,
+    "place": null,
+    "status": "family-report",
+    "sources": [
+      "A-0001"
+    ]
+  },
+  "death": {
+    "date": "1984-01-18",
+    "text": null,
+    "place": null,
+    "status": "family-report",
+    "sources": [
+      "A-0001"
+    ]
+  },
+  "parents": [
+    {
+      "id": "P-0008",
+      "status": "single-source",
+      "sources": [
+        "A-0001"
+      ]
+    },
+    {
+      "id": "P-0007",
+      "status": "single-source",
+      "sources": [
+        "A-0001"
+      ]
+    }
+  ]
+}

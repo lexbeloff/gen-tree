@@ -1,0 +1,33 @@
+{
+  "$schema": "../../person.schema.json",
+  "id": "P-0032",
+  "living": false,
+  "sex": "M",
+  "name": {
+    "surname": "Белов",
+    "given": "Василий",
+    "patronymic": "Григорьевич",
+    "birthSurname": null,
+    "otherSurnames": []
+  },
+  "status": "corroborated",
+  "facts": [
+    {
+      "type": "residence",
+      "text": "г. Ульяновск, ул. 12 Сентября (около 1942–1943)",
+      "status": "single-source",
+      "sources": [
+        "A-0024"
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "text": "Назван отцом Константина Белова в именном списке потерь (ЦАМО); семья подтвердила имя отца.",
+      "sources": [
+        "A-0024",
+        "A-0025"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "$schema": "../../person.schema.json",
+  "id": "P-0020",
+  "living": false,
+  "sex": "F",
+  "name": {
+    "surname": "Белова",
+    "given": "Елизавета",
+    "patronymic": "Тихоновна",
+    "birthSurname": null,
+    "otherSurnames": []
+  },
+  "status": "family-report",
+  "birth": {
+    "date": "1907-09-05",
+    "text": null,
+    "place": "с. Бирючевка, Ульяновский р-н",
+    "status": "family-report",
+    "sources": [
+      "A-0001",
+      "A-0025"
+    ]
+  },
+  "notes": [
+    {
+      "text": "Девичья фамилия не известна.",
+      "sources": [
+        "A-0025"
+      ]
+    }
+  ],
+  "spouses": [
+    {
+      "id": "P-0021",
+      "status": "single-source",
+      "sources": [
+        "A-0001"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "$schema": "../../person.schema.json",
+  "id": "P-0021",
+  "living": false,
+  "sex": "M",
+  "name": {
+    "surname": "Белов",
+    "given": "Константин",
+    "patronymic": "Васильевич",
+    "birthSurname": null,
+    "otherSurnames": []
+  },
+  "status": "corroborated",
+  "birth": {
+    "date": "1911",
+    "text": null,
+    "place": "с. Большие Ключищи",
+    "status": "corroborated",
+    "sources": [
+      "A-0024",
+      "A-0025",
+      "A-0001"
+    ]
+  },
+  "death": {
+    "date": null,
+    "text": "Пропал без вести в ноябре 1941 или феврале 1942 г.",
+    "place": null,
+    "status": "corroborated",
+    "sources": [
+      "A-0024",
+      "A-0025"
+    ]
+  },
+  "facts": [
+    {
+      "type": "military",
+      "date": "1941",
+      "text": "Красноармеец; призван в 1941 г. Ульяновским горвоенкоматом",
+      "status": "corroborated",
+      "sources": [
+        "A-0024"
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "text": "Отождествлён с записью из именного списка потерь (ЦАМО): совпали место рождения, пропажа без вести и имя отца (Василий Григорьевич); семья подтвердила эти сведения (17.11.2026).",
+      "sources": [
+        "A-0024",
+        "A-0025"
+      ]
+    },
+    {
+      "text": "По словам семьи, в свидетельстве о рождении дочери Лидии отец указан как Константин Васильевич; сам документ в деле не просмотрен.",
+      "sources": [
+        "A-0025"
+      ]
+    }
+  ],
+  "parents": [
+    {
+      "id": "P-0032",
+      "status": "corroborated",
+      "sources": [
+        "A-0024",
+        "A-0025"
+      ]
+    }
+  ],
+  "spouses": [
+    {
+      "id": "P-0020",
+      "status": "single-source",
+      "sources": [
+        "A-0001"
+      ]
+    }
+  ]
+}

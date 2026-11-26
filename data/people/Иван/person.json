@@ -1,0 +1,23 @@
+{
+  "$schema": "../../person.schema.json",
+  "id": "P-0036",
+  "living": true,
+  "sex": "M",
+  "name": {
+    "surname": null,
+    "given": "Иван",
+    "patronymic": null,
+    "birthSurname": null,
+    "otherSurnames": []
+  },
+  "parents": [],
+  "spouses": [
+    {
+      "id": "P-0012",
+      "status": "single-source",
+      "sources": [
+        "A-0031"
+      ]
+    }
+  ]
+}

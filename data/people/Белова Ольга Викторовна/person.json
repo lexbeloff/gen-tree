@@ -1,0 +1,38 @@
+{
+  "$schema": "../../person.schema.json",
+  "id": "P-0003",
+  "living": true,
+  "sex": "F",
+  "name": {
+    "surname": "Белова",
+    "given": "Ольга",
+    "patronymic": "Викторовна",
+    "birthSurname": null,
+    "otherSurnames": []
+  },
+  "parents": [
+    {
+      "id": "P-0006",
+      "status": "single-source",
+      "sources": [
+        "A-0001"
+      ]
+    },
+    {
+      "id": "P-0005",
+      "status": "single-source",
+      "sources": [
+        "A-0001"
+      ]
+    }
+  ],
+  "spouses": [
+    {
+      "id": "P-0004",
+      "status": "corroborated",
+      "sources": [
+        "A-0001"
+      ]
+    }
+  ]
+}

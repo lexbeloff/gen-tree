@@ -1,0 +1,41 @@
+{
+  "$schema": "../../person.schema.json",
+  "id": "P-0027",
+  "living": false,
+  "sex": "M",
+  "name": {
+    "surname": "Зинюшкин",
+    "given": "Кузьма",
+    "patronymic": null,
+    "birthSurname": null,
+    "otherSurnames": []
+  },
+  "status": "hypothesis",
+  "birth": {
+    "date": null,
+    "text": "ок. 1860–1885 (оценка)",
+    "place": null,
+    "status": "hypothesis",
+    "sources": [
+      "A-0011"
+    ]
+  },
+  "facts": [
+    {
+      "type": "residence",
+      "text": "Предположительно с. Елшанка или окрестности",
+      "status": "hypothesis",
+      "sources": [
+        "A-0011"
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "text": "Гипотетическая персона: имя выведено только из отчества «Кузьминична» и девичьей фамилии Анастасии (Зинюшкина).",
+      "sources": [
+        "A-0011"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "$schema": "../../person.schema.json",
+  "id": "P-0025",
+  "living": false,
+  "sex": "M",
+  "name": {
+    "surname": "Павлов",
+    "given": "Сергей",
+    "patronymic": "Дмитриевич",
+    "birthSurname": null,
+    "otherSurnames": []
+  },
+  "status": "single-source",
+  "birth": {
+    "date": null,
+    "text": "ок. 1870–1890 (оценка)",
+    "place": null,
+    "status": "single-source",
+    "sources": [
+      "A-0012"
+    ]
+  },
+  "facts": [
+    {
+      "type": "occupation",
+      "text": "Крестьянин (предположительно)",
+      "status": "single-source",
+      "sources": [
+        "A-0012"
+      ]
+    },
+    {
+      "type": "residence",
+      "text": "с. Елшанка Симбирского уезда",
+      "status": "single-source",
+      "sources": [
+        "A-0012"
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "text": "Назван отцом Василия в свидетельстве о рождении; отчества частично под штампами, чтение подтверждено семьёй по оригиналу (17.11.2026).",
+      "sources": [
+        "A-0012",
+        "A-0025"
+      ]
+    }
+  ]
+}

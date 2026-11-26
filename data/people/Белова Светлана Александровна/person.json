@@ -1,0 +1,22 @@
+{
+  "$schema": "../../person.schema.json",
+  "id": "P-0010",
+  "living": true,
+  "sex": "F",
+  "name": {
+    "surname": "Белова",
+    "given": "Светлана",
+    "patronymic": "Александровна",
+    "birthSurname": null,
+    "otherSurnames": []
+  },
+  "parents": [
+    {
+      "id": "P-0009",
+      "status": "single-source",
+      "sources": [
+        "A-0001"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "../../person.schema.json",
+  "id": "P-0034",
+  "living": true,
+  "sex": "M",
+  "name": {
+    "surname": "Огородников",
+    "given": "Александр",
+    "patronymic": null,
+    "birthSurname": null,
+    "otherSurnames": []
+  },
+  "parents": [],
+  "spouses": [
+    {
+      "id": "P-0012",
+      "status": "single-source",
+      "sources": [
+        "A-0030",
+        "A-0031"
+      ]
+    }
+  ]
+}

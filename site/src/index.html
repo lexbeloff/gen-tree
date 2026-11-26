@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Семейное древо</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='26'%3E%F0%9F%8C%B3%3C/text%3E%3C/svg%3E" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="topbar">
+        <h1 class="brand">
+          <svg class="brand-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22v-8M12 14c-4 0-7-3-7-7 4 0 7 3 7 7zm0 0c4 0 7-3 7-7-4 0-7 3-7 7zM12 9c-2-1-3-3-3-6 3 1 3 4 3 6z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>Семейное древо</span>
+        </h1>
+        <div class="search">
+          <label class="visually-hidden" for="search">Поиск по имени</label>
+          <input id="search" type="search" role="combobox" aria-expanded="false" aria-autocomplete="list" placeholder="Поиск по имени…" autocomplete="off" spellcheck="false" aria-controls="search-results" />
+          <ul id="search-results" class="search-results" role="listbox" hidden></ul>
+        </div>
+        <button id="theme-toggle" class="icon-btn" type="button" aria-label="Тема">☾</button>
+      </header>
+      <main id="stage" class="stage">
+        <div id="viewport" class="viewport" tabindex="0" role="application" aria-label="Родословное древо. Стрелки — сдвиг, плюс и минус — масштаб, 0 — показать всё">
+          <div id="world" class="world"></div>
+        </div>
+        <div id="message" class="message" role="status">Загрузка…</div>
+        <div class="toolbar" role="toolbar" aria-label="Масштаб">
+          <button id="zoom-in" class="icon-btn" type="button" aria-label="Приблизить" title="Приблизить (+)">+</button>
+          <button id="zoom-out" class="icon-btn" type="button" aria-label="Отдалить" title="Отдалить (−)">−</button>
+          <button id="fit-all" class="icon-btn wide" type="button" title="Показать всё (0)">Всё</button>
+          <button id="to-root" class="icon-btn wide" type="button" title="К корню (Home)">Корень</button>
+          <span id="zoom-level" class="zoom-level" aria-live="off">100%</span>
+        </div>
+        <div id="hint" class="hint" role="note" hidden>
+          <span>Колесо — масштаб, перетаскивание — сдвиг. Наведите или нажмите на карточку — подробности и источники.</span>
+          <button id="hint-close" class="hint-close icon-close" type="button" aria-label="Закрыть подсказку"></button>
+        </div>
+        <details class="legend">
+          <summary>Обозначения</summary>
+          <ul id="legend-list"></ul>
+        </details>
+      </main>
+    </div>
+  </body>
+</html>

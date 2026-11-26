@@ -1,0 +1,86 @@
+{
+  "$schema": "../../person.schema.json",
+  "id": "P-0007",
+  "living": false,
+  "sex": "F",
+  "name": {
+    "surname": "Павлова",
+    "given": "Анастасия",
+    "patronymic": "Кузьминична",
+    "birthSurname": "Зинюшкина",
+    "otherSurnames": []
+  },
+  "status": "corroborated",
+  "birth": {
+    "date": "1907-11-07",
+    "text": null,
+    "place": null,
+    "status": "family-report",
+    "sources": [
+      "A-0001"
+    ]
+  },
+  "death": {
+    "date": "1986-07-09",
+    "text": null,
+    "place": null,
+    "status": "family-report",
+    "sources": [
+      "A-0001"
+    ]
+  },
+  "facts": [
+    {
+      "type": "name",
+      "text": "Девичья фамилия Зинюшкина, отчество Кузьминична (в свидетельстве о браке имя читается неуверенно: «Настасья»?); после брака — Павлова",
+      "status": "corroborated",
+      "sources": [
+        "A-0011",
+        "A-0001"
+      ]
+    },
+    {
+      "type": "residence",
+      "text": "с. Елшанка Ульяновского р-на",
+      "status": "single-source",
+      "sources": [
+        "A-0011"
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "text": "Год брака (1931) в свидетельстве читается предположительно.",
+      "sources": [
+        "A-0011"
+      ]
+    }
+  ],
+  "parents": [
+    {
+      "id": "P-0027",
+      "status": "hypothesis",
+      "sources": [
+        "A-0011"
+      ]
+    },
+    {
+      "id": "P-0035",
+      "status": "single-source",
+      "sources": [
+        "A-0031"
+      ]
+    }
+  ],
+  "spouses": [
+    {
+      "id": "P-0008",
+      "status": "corroborated",
+      "date": "1931",
+      "sources": [
+        "A-0001",
+        "A-0011"
+      ]
+    }
+  ]
+}

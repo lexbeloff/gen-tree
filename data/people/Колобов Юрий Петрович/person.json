@@ -1,0 +1,29 @@
+{
+  "$schema": "../../person.schema.json",
+  "id": "P-0013",
+  "living": true,
+  "sex": "M",
+  "name": {
+    "surname": "Колобов",
+    "given": "Юрий",
+    "patronymic": "Петрович",
+    "birthSurname": null,
+    "otherSurnames": []
+  },
+  "parents": [
+    {
+      "id": "P-0011",
+      "status": "single-source",
+      "sources": [
+        "A-0001"
+      ]
+    },
+    {
+      "id": "P-0012",
+      "status": "single-source",
+      "sources": [
+        "A-0001"
+      ]
+    }
+  ]
+}

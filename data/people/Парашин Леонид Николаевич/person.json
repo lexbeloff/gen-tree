@@ -1,0 +1,67 @@
+{
+  "$schema": "../../person.schema.json",
+  "id": "P-0018",
+  "living": false,
+  "sex": "M",
+  "name": {
+    "surname": "Парашин",
+    "given": "Леонид",
+    "patronymic": "Николаевич",
+    "birthSurname": null,
+    "otherSurnames": []
+  },
+  "status": "family-report",
+  "birth": {
+    "date": "1936-10-23",
+    "text": null,
+    "place": null,
+    "status": "family-report",
+    "sources": [
+      "A-0001"
+    ]
+  },
+  "death": {
+    "date": "1997-06-28",
+    "text": null,
+    "place": null,
+    "status": "family-report",
+    "sources": [
+      "A-0001"
+    ]
+  },
+  "facts": [
+    {
+      "type": "residence",
+      "text": "д. Шиловка Сенгилеевского р-на (по семейным сведениям)",
+      "status": "family-report",
+      "sources": [
+        "A-0001"
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "text": "Сын Николай носит фамилию матери (Белова).",
+      "sources": [
+        "A-0001"
+      ]
+    }
+  ],
+  "parents": [
+    {
+      "id": "P-0022",
+      "status": "corroborated",
+      "sources": [
+        "A-0001",
+        "A-0014"
+      ]
+    },
+    {
+      "id": "P-0023",
+      "status": "single-source",
+      "sources": [
+        "A-0001"
+      ]
+    }
+  ]
+}

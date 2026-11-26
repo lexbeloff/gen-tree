@@ -1,0 +1,119 @@
+{
+  "$schema": "../../person.schema.json",
+  "id": "P-0005",
+  "living": false,
+  "sex": "F",
+  "name": {
+    "surname": "Колобова",
+    "given": "Валентина",
+    "patronymic": "Васильевна",
+    "birthSurname": "Павлова",
+    "otherSurnames": []
+  },
+  "status": "single-source",
+  "birth": {
+    "date": "1937-07-23",
+    "text": null,
+    "place": null,
+    "status": "corroborated",
+    "sources": [
+      "A-0006",
+      "A-0007",
+      "A-0001"
+    ]
+  },
+  "death": {
+    "date": "2020-11-15",
+    "text": null,
+    "place": null,
+    "status": "family-report",
+    "sources": [
+      "A-0001"
+    ]
+  },
+  "facts": [
+    {
+      "type": "name",
+      "date": "1965",
+      "text": "Урождённая Павлова; после брака (7 марта 1965, чтение даты предположительное) — Колобова",
+      "status": "corroborated",
+      "sources": [
+        "A-0006",
+        "A-0001"
+      ]
+    },
+    {
+      "type": "education",
+      "text": "Среднее",
+      "status": "single-source",
+      "sources": [
+        "A-0006",
+        "A-0007"
+      ]
+    },
+    {
+      "type": "occupation",
+      "date": "1960",
+      "text": "Разнорабочая (предположительно, Ульяновский автомобильный завод)",
+      "status": "single-source",
+      "sources": [
+        "A-0006"
+      ]
+    },
+    {
+      "type": "occupation",
+      "date": "2000",
+      "text": "Кастелянша, детский сад №143, г. Ульяновск",
+      "status": "single-source",
+      "sources": [
+        "A-0007"
+      ]
+    },
+    {
+      "type": "residence",
+      "text": "г. Ульяновск",
+      "status": "single-source",
+      "sources": [
+        "A-0006",
+        "A-0007"
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "text": "Дочь Павлова В. С. и Анастасии Кузьминичны по семейным сведениям; отчество и девичья фамилия согласуются, но запись о рождении 1937 г. не найдена.",
+      "sources": [
+        "A-0001",
+        "A-0006"
+      ]
+    }
+  ],
+  "parents": [
+    {
+      "id": "P-0008",
+      "status": "single-source",
+      "sources": [
+        "A-0001",
+        "A-0006"
+      ]
+    },
+    {
+      "id": "P-0007",
+      "status": "single-source",
+      "sources": [
+        "A-0001"
+      ]
+    }
+  ],
+  "spouses": [
+    {
+      "id": "P-0006",
+      "status": "corroborated",
+      "date": "1965",
+      "sources": [
+        "A-0001",
+        "A-0006"
+      ]
+    }
+  ]
+}

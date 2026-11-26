@@ -1,0 +1,151 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "person.schema.json",
+  "title": "Персона древа (data/people/<ФИО>/person.json)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "living", "sex", "name"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "id": { "type": "string", "pattern": "^P-[0-9]{4}$" },
+    "living": { "type": "boolean" },
+    "sex": { "enum": ["M", "F"] },
+    "name": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["surname", "given"],
+      "properties": {
+        "surname": { "type": ["string", "null"], "minLength": 1 },
+        "given": { "type": "string", "minLength": 1 },
+        "patronymic": { "type": ["string", "null"] },
+        "birthSurname": { "type": ["string", "null"] },
+        "otherSurnames": { "type": "array", "items": { "type": "string", "minLength": 1 } }
+      }
+    },
+    "status": { "$ref": "#/$defs/status" },
+    "birth": { "$ref": "#/$defs/dateEvent" },
+    "death": { "$ref": "#/$defs/dateEvent" },
+    "facts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["type", "text", "status", "sources"],
+        "properties": {
+          "type": { "enum": ["occupation", "military", "residence", "award", "education", "name", "other"] },
+          "date": { "$ref": "#/$defs/isoDateOrNull" },
+          "text": { "type": "string", "minLength": 1 },
+          "status": { "$ref": "#/$defs/status" },
+          "sources": { "$ref": "#/$defs/sources" }
+        }
+      }
+    },
+    "photos": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["file", "caption", "sources"],
+        "properties": {
+          "file": { "type": "string", "pattern": "^photos/[^/]+[.](jpg|jpeg|png)$" },
+          "caption": { "type": "string", "minLength": 1 },
+          "year": { "type": ["string", "null"] },
+          "sources": { "$ref": "#/$defs/sources" }
+        }
+      }
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["text", "sources"],
+        "properties": {
+          "text": { "type": "string", "minLength": 1 },
+          "sources": { "$ref": "#/$defs/sources" }
+        }
+      }
+    },
+    "parents": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "status", "sources"],
+        "properties": {
+          "id": { "$ref": "#/$defs/personId" },
+          "status": { "$ref": "#/$defs/status" },
+          "sources": { "$ref": "#/$defs/sources" }
+        }
+      }
+    },
+    "spouses": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "status", "sources"],
+        "properties": {
+          "id": { "$ref": "#/$defs/personId" },
+          "status": { "$ref": "#/$defs/status" },
+          "date": { "$ref": "#/$defs/isoDateOrNull" },
+          "sources": { "$ref": "#/$defs/sources" }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "living": { "const": true } }, "required": ["living"] },
+      "then": {
+        "$comment": "Живые: только id, living, sex, name, parents, spouses (без дат у супругов).",
+        "not": {
+          "anyOf": [
+            { "required": ["status"] },
+            { "required": ["birth"] },
+            { "required": ["death"] },
+            { "required": ["facts"] },
+            { "required": ["photos"] },
+            { "required": ["notes"] }
+          ]
+        },
+        "properties": {
+          "spouses": { "items": { "not": { "required": ["date"] } } }
+        }
+      },
+      "else": { "required": ["status"] }
+    }
+  ],
+  "$defs": {
+    "status": {
+      "enum": ["strongly-corroborated", "corroborated", "single-source", "family-report", "hypothesis", "unresolved"]
+    },
+    "personId": { "type": "string", "pattern": "^P-[0-9]{4}$" },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "pattern": "^A-[0-9]{4}$" }
+    },
+    "isoDate": { "type": "string", "pattern": "^[0-9]{4}(-(0[1-9]|1[0-2])(-(0[1-9]|[12][0-9]|3[01]))?)?$" },
+    "isoDateOrNull": {
+      "oneOf": [ { "type": "null" }, { "$ref": "#/$defs/isoDate" } ]
+    },
+    "dateEvent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "sources"],
+      "properties": {
+        "date": { "$ref": "#/$defs/isoDateOrNull" },
+        "text": { "type": ["string", "null"] },
+        "place": { "type": ["string", "null"] },
+        "status": { "$ref": "#/$defs/status" },
+        "sources": { "$ref": "#/$defs/sources" }
+      },
+      "anyOf": [
+        { "required": ["date"], "properties": { "date": { "type": "string" } } },
+        { "required": ["text"], "properties": { "text": { "type": "string", "minLength": 1 } } }
+      ]
+    }
+  }
+}

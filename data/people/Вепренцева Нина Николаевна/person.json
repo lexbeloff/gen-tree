@@ -1,0 +1,22 @@
+{
+  "$schema": "../../person.schema.json",
+  "id": "P-0024",
+  "living": true,
+  "sex": "F",
+  "name": {
+    "surname": "Вепренцева",
+    "given": "Нина",
+    "patronymic": "Николаевна",
+    "birthSurname": null,
+    "otherSurnames": []
+  },
+  "parents": [
+    {
+      "id": "P-0022",
+      "status": "single-source",
+      "sources": [
+        "A-0001"
+      ]
+    }
+  ]
+}

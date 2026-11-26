@@ -1,0 +1,103 @@
+{
+  "$schema": "../../person.schema.json",
+  "id": "P-0006",
+  "living": false,
+  "sex": "M",
+  "name": {
+    "surname": "Колобов",
+    "given": "Виктор",
+    "patronymic": "Петрович",
+    "birthSurname": null,
+    "otherSurnames": []
+  },
+  "status": "single-source",
+  "birth": {
+    "date": "1940-09-07",
+    "text": null,
+    "place": null,
+    "status": "family-report",
+    "sources": [
+      "A-0001"
+    ]
+  },
+  "death": {
+    "date": "1986-04-01",
+    "text": null,
+    "place": null,
+    "status": "family-report",
+    "sources": [
+      "A-0001"
+    ]
+  },
+  "facts": [
+    {
+      "type": "military",
+      "date": null,
+      "text": "Военнослужащий в/ч 11102 (1963–1964)",
+      "status": "single-source",
+      "sources": [
+        "A-0002"
+      ]
+    },
+    {
+      "type": "award",
+      "text": "Звание «Член бригады коммунистического труда» (приказ от 7 августа 1963 или 1964 г.; бланк напечатан в 1963 г., вероятнее 1964)",
+      "status": "single-source",
+      "sources": [
+        "A-0002"
+      ]
+    }
+  ],
+  "photos": [
+    {
+      "file": "photos/1964-udostoverenie.jpg",
+      "caption": "Фото из удостоверения члена бригады коммунистического труда, в военной форме",
+      "year": "1963–1964",
+      "sources": [
+        "A-0002"
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "text": "Даты жизни известны только со слов семьи.",
+      "sources": [
+        "A-0001"
+      ]
+    },
+    {
+      "text": "Отчество «Петрович» указано в удостоверении 1963–1964 гг.",
+      "sources": [
+        "A-0002"
+      ]
+    }
+  ],
+  "parents": [
+    {
+      "id": "P-0011",
+      "status": "single-source",
+      "sources": [
+        "A-0001",
+        "A-0002"
+      ]
+    },
+    {
+      "id": "P-0012",
+      "status": "single-source",
+      "sources": [
+        "A-0001"
+      ]
+    }
+  ],
+  "spouses": [
+    {
+      "id": "P-0005",
+      "status": "corroborated",
+      "date": "1965",
+      "sources": [
+        "A-0001",
+        "A-0006"
+      ]
+    }
+  ]
+}

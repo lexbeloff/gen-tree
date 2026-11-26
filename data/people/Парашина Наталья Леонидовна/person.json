@@ -1,0 +1,51 @@
+{
+  "$schema": "../../person.schema.json",
+  "id": "P-0019",
+  "living": false,
+  "sex": "F",
+  "name": {
+    "surname": "Парашина",
+    "given": "Наталья",
+    "patronymic": "Леонидовна",
+    "birthSurname": null,
+    "otherSurnames": []
+  },
+  "status": "family-report",
+  "birth": {
+    "date": "1960-01-10",
+    "text": null,
+    "place": null,
+    "status": "family-report",
+    "sources": [
+      "A-0001",
+      "A-0025"
+    ]
+  },
+  "death": {
+    "date": "1971-12-26",
+    "text": null,
+    "place": null,
+    "status": "family-report",
+    "sources": [
+      "A-0001",
+      "A-0025"
+    ]
+  },
+  "notes": [
+    {
+      "text": "Умерла в возрасте 11 лет. Мать в семейной записке не указана.",
+      "sources": [
+        "A-0025"
+      ]
+    }
+  ],
+  "parents": [
+    {
+      "id": "P-0018",
+      "status": "single-source",
+      "sources": [
+        "A-0001"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "sources.schema.json",
+  "title": "Каталог источников (data/sources.json)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["sources"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "kind", "title", "url"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^A-[0-9]{4}$" },
+          "kind": { "enum": ["archive", "family-document", "family-memory", "reference"] },
+          "title": { "type": "string", "minLength": 1 },
+          "repository": { "type": ["string", "null"] },
+          "reference": { "type": ["string", "null"] },
+          "date": { "type": ["string", "null"] },
+          "url": { "type": ["string", "null"], "pattern": "^https?://" },
+          "note": { "type": ["string", "null"] }
+        },
+        "allOf": [
+          { "if": { "properties": { "kind": { "enum": ["archive", "reference"] } } }, "then": { "properties": { "url": { "type": "string" } } } }
+        ]
+      }
+    }
+  }
+}

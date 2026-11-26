@@ -1,0 +1,89 @@
+{
+  "$schema": "../../person.schema.json",
+  "id": "P-0017",
+  "living": false,
+  "sex": "F",
+  "name": {
+    "surname": "Белова",
+    "given": "Лидия",
+    "patronymic": "Константиновна",
+    "birthSurname": "Белова",
+    "otherSurnames": [
+      "Кушнеренко"
+    ]
+  },
+  "status": "single-source",
+  "birth": {
+    "date": "1937-03-12",
+    "text": null,
+    "place": null,
+    "status": "family-report",
+    "sources": [
+      "A-0001"
+    ]
+  },
+  "death": {
+    "date": "2024-06-20",
+    "text": null,
+    "place": null,
+    "status": "family-report",
+    "sources": [
+      "A-0001"
+    ]
+  },
+  "facts": [
+    {
+      "type": "name",
+      "date": "1991",
+      "text": "Урождённая Белова; в 1991 г. носила фамилию мужа — Кушнеренко",
+      "status": "corroborated",
+      "sources": [
+        "A-0003",
+        "A-0001"
+      ]
+    },
+    {
+      "type": "award",
+      "date": "1991-11-26",
+      "text": "Медаль «Ветеран труда» за долголетний добросовестный труд (решение Ульяновского облисполкома)",
+      "status": "single-source",
+      "sources": [
+        "A-0003"
+      ]
+    },
+    {
+      "type": "residence",
+      "text": "г. Ульяновск",
+      "status": "family-report",
+      "sources": [
+        "A-0001"
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "text": "Муж Кушнеренко не был отцом Николая; имя мужа не известно.",
+      "sources": [
+        "A-0025"
+      ]
+    }
+  ],
+  "parents": [
+    {
+      "id": "P-0021",
+      "status": "single-source",
+      "sources": [
+        "A-0001",
+        "A-0003",
+        "A-0025"
+      ]
+    },
+    {
+      "id": "P-0020",
+      "status": "single-source",
+      "sources": [
+        "A-0001"
+      ]
+    }
+  ]
+}

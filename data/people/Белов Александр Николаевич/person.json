@@ -1,0 +1,29 @@
+{
+  "$schema": "../../person.schema.json",
+  "id": "P-0002",
+  "living": true,
+  "sex": "M",
+  "name": {
+    "surname": "Белов",
+    "given": "Александр",
+    "patronymic": "Николаевич",
+    "birthSurname": null,
+    "otherSurnames": []
+  },
+  "parents": [
+    {
+      "id": "P-0004",
+      "status": "single-source",
+      "sources": [
+        "A-0001"
+      ]
+    },
+    {
+      "id": "P-0003",
+      "status": "single-source",
+      "sources": [
+        "A-0001"
+      ]
+    }
+  ]
+}

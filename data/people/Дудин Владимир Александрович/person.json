@@ -1,0 +1,31 @@
+{
+  "$schema": "../../person.schema.json",
+  "id": "P-0015",
+  "living": true,
+  "sex": "M",
+  "name": {
+    "surname": "Дудин",
+    "given": "Владимир",
+    "patronymic": "Александрович",
+    "birthSurname": null,
+    "otherSurnames": []
+  },
+  "parents": [
+    {
+      "id": "P-0012",
+      "status": "single-source",
+      "sources": [
+        "A-0001",
+        "A-0030"
+      ]
+    },
+    {
+      "id": "P-0034",
+      "status": "single-source",
+      "sources": [
+        "A-0030",
+        "A-0031"
+      ]
+    }
+  ]
+}

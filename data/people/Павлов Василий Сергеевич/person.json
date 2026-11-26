@@ -1,0 +1,133 @@
+{
+  "$schema": "../../person.schema.json",
+  "id": "P-0008",
+  "living": false,
+  "sex": "M",
+  "name": {
+    "surname": "Павлов",
+    "given": "Василий",
+    "patronymic": "Сергеевич",
+    "birthSurname": null,
+    "otherSurnames": []
+  },
+  "status": "strongly-corroborated",
+  "birth": {
+    "date": "1909-01-23",
+    "text": null,
+    "place": "с. Елшанка, Ульяновский р-н",
+    "status": "strongly-corroborated",
+    "sources": [
+      "A-0009",
+      "A-0012",
+      "A-0001"
+    ]
+  },
+  "death": {
+    "date": "1996-11-01",
+    "text": null,
+    "place": null,
+    "status": "family-report",
+    "sources": [
+      "A-0001"
+    ]
+  },
+  "facts": [
+    {
+      "type": "occupation",
+      "date": "1940",
+      "text": "Колхозник, с. Елшанка (Ульяновский р-н, Куйбышевская обл.)",
+      "status": "single-source",
+      "sources": [
+        "A-0009"
+      ]
+    },
+    {
+      "type": "residence",
+      "date": "1940",
+      "text": "с. Елшанка, Ульяновский р-н, Куйбышевская обл.",
+      "status": "single-source",
+      "sources": [
+        "A-0009"
+      ]
+    },
+    {
+      "type": "military",
+      "date": "1948",
+      "text": "Рядовой запаса, стрелок (ВУС №1 — стрелки-автоматчики и ручные пулемётчики), на учёте в Ульяновском райвоенкомате; участие в боях документами не подтверждено и не опровергнуто",
+      "status": "single-source",
+      "sources": [
+        "A-0008"
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Пенсионер по возрасту (даты назначения читаются неуверенно, ок. 1981–1984)",
+      "status": "single-source",
+      "sources": [
+        "A-0013"
+      ]
+    }
+  ],
+  "photos": [
+    {
+      "file": "photos/1940-pasport.jpg",
+      "caption": "Фото из паспорта",
+      "year": "1940",
+      "sources": [
+        "A-0010"
+      ]
+    },
+    {
+      "file": "photos/1948-voenbilet.jpg",
+      "caption": "Фото из военного билета, в военной форме",
+      "year": "1948",
+      "sources": [
+        "A-0008"
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "text": "Дата и место рождения совпадают в паспорте 1940 г. и повторном свидетельстве о рождении 1946 г. (выдано по книге записей ЗАГС) и согласуются с семейными сведениями.",
+      "sources": [
+        "A-0009",
+        "A-0012",
+        "A-0001"
+      ]
+    },
+    {
+      "text": "Отчества родителей в свидетельстве частично закрыты штампами; чтение подтверждено семьёй по оригиналу (17.11.2026).",
+      "sources": [
+        "A-0012",
+        "A-0025"
+      ]
+    }
+  ],
+  "parents": [
+    {
+      "id": "P-0025",
+      "status": "single-source",
+      "sources": [
+        "A-0012"
+      ]
+    },
+    {
+      "id": "P-0026",
+      "status": "single-source",
+      "sources": [
+        "A-0012"
+      ]
+    }
+  ],
+  "spouses": [
+    {
+      "id": "P-0007",
+      "status": "corroborated",
+      "date": "1931",
+      "sources": [
+        "A-0001",
+        "A-0011"
+      ]
+    }
+  ]
+}

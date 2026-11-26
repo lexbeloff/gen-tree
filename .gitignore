@@ -1,0 +1,31 @@
+# В git уходит только то, что нужно для сборки и публикации страницы (GitHub Pages).
+# Всё остальное (дело, документы, харнесс Claude, бэклог, заметки) — только локально.
+/*
+!/.gitignore
+!/.gitattributes
+!/.github/
+!/data/
+!/site/
+!/tools/
+
+# tools: в CI нужен только privacy_check.py
+/tools/*
+!/tools/privacy_check.py
+
+# data: приватная часть папок персон и собранный файл
+/data/people/*/private/
+/data/tree.json
+
+# site: документация и вымышленная фикстура — локально
+/site/README.md
+/site/fixtures/
+
+# сборка и мусор
+node_modules/
+dist/
+/site/.generated/
+.cache/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db

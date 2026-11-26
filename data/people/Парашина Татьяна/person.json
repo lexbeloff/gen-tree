@@ -1,0 +1,43 @@
+{
+  "$schema": "../../person.schema.json",
+  "id": "P-0023",
+  "living": false,
+  "sex": "F",
+  "name": {
+    "surname": "Парашина",
+    "given": "Татьяна",
+    "patronymic": null,
+    "birthSurname": null,
+    "otherSurnames": []
+  },
+  "status": "single-source",
+  "facts": [
+    {
+      "type": "residence",
+      "text": "д. Шиловка",
+      "status": "single-source",
+      "sources": [
+        "A-0001",
+        "A-0014"
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "text": "В донесении 1942 г. адресат извещения — «Парашина» (имя не указано), д. Шиловка; отождествление с Татьяной основано на семейных сведениях.",
+      "sources": [
+        "A-0014"
+      ]
+    }
+  ],
+  "spouses": [
+    {
+      "id": "P-0022",
+      "status": "single-source",
+      "sources": [
+        "A-0001",
+        "A-0014"
+      ]
+    }
+  ]
+}

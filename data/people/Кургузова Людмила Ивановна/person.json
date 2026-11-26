@@ -1,0 +1,31 @@
+{
+  "$schema": "../../person.schema.json",
+  "id": "P-0016",
+  "living": true,
+  "sex": "F",
+  "name": {
+    "surname": "Кургузова",
+    "given": "Людмила",
+    "patronymic": "Ивановна",
+    "birthSurname": null,
+    "otherSurnames": []
+  },
+  "parents": [
+    {
+      "id": "P-0012",
+      "status": "single-source",
+      "sources": [
+        "A-0001",
+        "A-0030",
+        "A-0031"
+      ]
+    },
+    {
+      "id": "P-0036",
+      "status": "single-source",
+      "sources": [
+        "A-0031"
+      ]
+    }
+  ]
+}

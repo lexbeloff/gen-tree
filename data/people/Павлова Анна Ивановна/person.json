@@ -1,0 +1,42 @@
+{
+  "$schema": "../../person.schema.json",
+  "id": "P-0026",
+  "living": false,
+  "sex": "F",
+  "name": {
+    "surname": "Павлова",
+    "given": "Анна",
+    "patronymic": "Ивановна",
+    "birthSurname": null,
+    "otherSurnames": []
+  },
+  "status": "single-source",
+  "birth": {
+    "date": null,
+    "text": "ок. 1875–1890 (оценка)",
+    "place": null,
+    "status": "single-source",
+    "sources": [
+      "A-0012"
+    ]
+  },
+  "facts": [
+    {
+      "type": "residence",
+      "text": "с. Елшанка",
+      "status": "single-source",
+      "sources": [
+        "A-0012"
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "text": "Названа матерью Василия в свидетельстве о рождении; отчества частично под штампами, чтение подтверждено семьёй по оригиналу (17.11.2026).",
+      "sources": [
+        "A-0012",
+        "A-0025"
+      ]
+    }
+  ]
+}

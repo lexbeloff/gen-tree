@@ -1,0 +1,26 @@
+{
+  "name": "gentree-site",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "data": "node scripts/build-data.ts",
+    "data:fixture": "node scripts/build-data.ts fixtures/data",
+    "dev": "rspack serve",
+    "dev:fixture": "cross-env GENTREE_DATA=fixtures/data PORT=5174 rspack serve",
+    "build": "rspack build",
+    "build:fixture": "cross-env GENTREE_DATA=fixtures/data rspack build",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@rspack/cli": "2.3.4",
+    "@rspack/core": "2.3.4",
+    "@rspack/dev-server": "2.2.2",
+    "@types/node": "26.6.11",
+    "ajv": "8.20.0",
+    "cross-env": "10.1.0",
+    "sass": "1.108.2",
+    "sass-loader": "17.1.1",
+    "typescript": "7.0.2"
+  }
+}

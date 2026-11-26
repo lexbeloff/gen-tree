@@ -1,0 +1,49 @@
+{
+  "$schema": "../../person.schema.json",
+  "id": "P-0030",
+  "living": false,
+  "sex": "M",
+  "name": {
+    "surname": "Парашин",
+    "given": "Александр",
+    "patronymic": null,
+    "birthSurname": null,
+    "otherSurnames": []
+  },
+  "status": "hypothesis",
+  "birth": {
+    "date": null,
+    "text": "ок. 1880–1895 (оценка)",
+    "place": null,
+    "status": "hypothesis",
+    "sources": [
+      "A-0014"
+    ]
+  },
+  "facts": [
+    {
+      "type": "occupation",
+      "text": "Крестьянин (предположительно)",
+      "status": "hypothesis",
+      "sources": [
+        "A-0014"
+      ]
+    },
+    {
+      "type": "residence",
+      "text": "д. Шиловка",
+      "status": "hypothesis",
+      "sources": [
+        "A-0014"
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "text": "Гипотетическая персона: имя выведено только из отчества «Александрович» у Николая Парашина.",
+      "sources": [
+        "A-0014"
+      ]
+    }
+  ]
+}

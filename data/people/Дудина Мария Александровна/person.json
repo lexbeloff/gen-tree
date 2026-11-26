@@ -1,0 +1,70 @@
+{
+  "$schema": "../../person.schema.json",
+  "id": "P-0012",
+  "living": false,
+  "sex": "F",
+  "name": {
+    "surname": "Дудина",
+    "given": "Мария",
+    "patronymic": "Александровна",
+    "birthSurname": null,
+    "otherSurnames": []
+  },
+  "status": "family-report",
+  "birth": {
+    "date": "1918-10-22",
+    "text": null,
+    "place": "с. Большие Ключищи, Ульяновский р-н",
+    "status": "family-report",
+    "sources": [
+      "A-0029"
+    ]
+  },
+  "death": {
+    "date": "1979-10-06",
+    "text": null,
+    "status": "family-report",
+    "sources": [
+      "A-0029"
+    ]
+  },
+  "notes": [
+    {
+      "text": "Дудина — девичья фамилия; фамилия в браке не известна.",
+      "sources": [
+        "A-0029"
+      ]
+    },
+    {
+      "text": "Мужья: Колобов Пётр (сыновья Юрий и Виктор), Огородников Александр (сыновья Валерий и Владимир), Иван (дочь Людмила); порядок браков не известен.",
+      "sources": [
+        "A-0030",
+        "A-0031"
+      ]
+    }
+  ],
+  "spouses": [
+    {
+      "id": "P-0011",
+      "status": "single-source",
+      "sources": [
+        "A-0030"
+      ]
+    },
+    {
+      "id": "P-0034",
+      "status": "single-source",
+      "sources": [
+        "A-0030",
+        "A-0031"
+      ]
+    },
+    {
+      "id": "P-0036",
+      "status": "single-source",
+      "sources": [
+        "A-0031"
+      ]
+    }
+  ]
+}
