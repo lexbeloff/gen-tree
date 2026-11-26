@@ -75,17 +75,18 @@
   "parents": [
     {
       "id": "P-0011",
-      "status": "single-source",
+      "status": "corroborated",
       "sources": [
         "A-0001",
-        "A-0002"
+        "A-0033"
       ]
     },
     {
       "id": "P-0012",
-      "status": "single-source",
+      "status": "corroborated",
       "sources": [
-        "A-0001"
+        "A-0001",
+        "A-0033"
       ]
     }
   ],

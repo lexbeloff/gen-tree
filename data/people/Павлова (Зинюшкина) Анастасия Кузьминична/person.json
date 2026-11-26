@@ -59,16 +59,18 @@
   "parents": [
     {
       "id": "P-0027",
-      "status": "hypothesis",
+      "status": "corroborated",
       "sources": [
-        "A-0011"
+        "A-0011",
+        "A-0034"
       ]
     },
     {
       "id": "P-0035",
-      "status": "single-source",
+      "status": "corroborated",
       "sources": [
-        "A-0031"
+        "A-0031",
+        "A-0034"
       ]
     }
   ],

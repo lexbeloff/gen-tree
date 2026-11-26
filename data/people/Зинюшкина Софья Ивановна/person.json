@@ -1,0 +1,33 @@
+{
+  "$schema": "../../person.schema.json",
+  "id": "P-0035",
+  "living": false,
+  "sex": "F",
+  "name": {
+    "surname": "Зинюшкина",
+    "given": "Софья",
+    "patronymic": "Ивановна",
+    "birthSurname": null,
+    "otherSurnames": []
+  },
+  "status": "corroborated",
+  "notes": [
+    {
+      "text": "Мать Анастасии Кузьминичны: так записано в свидетельстве о её рождении, это совпадает со сведениями семьи. Девичья фамилия не известна.",
+      "sources": [
+        "A-0034",
+        "A-0031"
+      ]
+    }
+  ],
+  "parents": [],
+  "spouses": [
+    {
+      "id": "P-0027",
+      "status": "single-source",
+      "sources": [
+        "A-0034"
+      ]
+    }
+  ]
+}
